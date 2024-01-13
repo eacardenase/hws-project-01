@@ -13,6 +13,16 @@
 		20EBC0AB2B5339EB001728DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0A92B5339EB001728DB /* Main.storyboard */; };
 		20EBC0AD2B5339ED001728DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0AC2B5339ED001728DB /* Assets.xcassets */; };
 		20EBC0B02B5339ED001728DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0AE2B5339ED001728DB /* LaunchScreen.storyboard */; };
+		20EBC0C22B533B72001728DB /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0B82B533B72001728DB /* nssl0049.jpg */; };
+		20EBC0C32B533B72001728DB /* nssl0046.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0B92B533B72001728DB /* nssl0046.jpg */; };
+		20EBC0C42B533B72001728DB /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0BA2B533B72001728DB /* nssl0091.jpg */; };
+		20EBC0C52B533B72001728DB /* nssl0045.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0BB2B533B72001728DB /* nssl0045.jpg */; };
+		20EBC0C62B533B72001728DB /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0BC2B533B72001728DB /* nssl0051.jpg */; };
+		20EBC0C72B533B72001728DB /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0BD2B533B72001728DB /* nssl0041.jpg */; };
+		20EBC0C82B533B72001728DB /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0BE2B533B72001728DB /* nssl0042.jpg */; };
+		20EBC0C92B533B72001728DB /* nssl0043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0BF2B533B72001728DB /* nssl0043.jpg */; };
+		20EBC0CA2B533B72001728DB /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0C02B533B72001728DB /* nssl0033.jpg */; };
+		20EBC0CB2B533B72001728DB /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EBC0C12B533B72001728DB /* nssl0034.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		20EBC0AC2B5339ED001728DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EBC0AF2B5339ED001728DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20EBC0B12B5339ED001728DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EBC0B82B533B72001728DB /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
+		20EBC0B92B533B72001728DB /* nssl0046.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0046.jpg; sourceTree = "<group>"; };
+		20EBC0BA2B533B72001728DB /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
+		20EBC0BB2B533B72001728DB /* nssl0045.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0045.jpg; sourceTree = "<group>"; };
+		20EBC0BC2B533B72001728DB /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
+		20EBC0BD2B533B72001728DB /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
+		20EBC0BE2B533B72001728DB /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
+		20EBC0BF2B533B72001728DB /* nssl0043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0043.jpg; sourceTree = "<group>"; };
+		20EBC0C02B533B72001728DB /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
+		20EBC0C12B533B72001728DB /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +83,26 @@
 				20EBC0AC2B5339ED001728DB /* Assets.xcassets */,
 				20EBC0AE2B5339ED001728DB /* LaunchScreen.storyboard */,
 				20EBC0B12B5339ED001728DB /* Info.plist */,
+				20EBC0B72B533B72001728DB /* Content */,
 			);
 			path = "hws-project-01";
+			sourceTree = "<group>";
+		};
+		20EBC0B72B533B72001728DB /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				20EBC0B82B533B72001728DB /* nssl0049.jpg */,
+				20EBC0B92B533B72001728DB /* nssl0046.jpg */,
+				20EBC0BA2B533B72001728DB /* nssl0091.jpg */,
+				20EBC0BB2B533B72001728DB /* nssl0045.jpg */,
+				20EBC0BC2B533B72001728DB /* nssl0051.jpg */,
+				20EBC0BD2B533B72001728DB /* nssl0041.jpg */,
+				20EBC0BE2B533B72001728DB /* nssl0042.jpg */,
+				20EBC0BF2B533B72001728DB /* nssl0043.jpg */,
+				20EBC0C02B533B72001728DB /* nssl0033.jpg */,
+				20EBC0C12B533B72001728DB /* nssl0034.jpg */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +163,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20EBC0C32B533B72001728DB /* nssl0046.jpg in Resources */,
+				20EBC0CA2B533B72001728DB /* nssl0033.jpg in Resources */,
+				20EBC0C62B533B72001728DB /* nssl0051.jpg in Resources */,
+				20EBC0C42B533B72001728DB /* nssl0091.jpg in Resources */,
+				20EBC0C92B533B72001728DB /* nssl0043.jpg in Resources */,
+				20EBC0CB2B533B72001728DB /* nssl0034.jpg in Resources */,
+				20EBC0C22B533B72001728DB /* nssl0049.jpg in Resources */,
+				20EBC0C72B533B72001728DB /* nssl0041.jpg in Resources */,
+				20EBC0C82B533B72001728DB /* nssl0042.jpg in Resources */,
 				20EBC0B02B5339ED001728DB /* LaunchScreen.storyboard in Resources */,
 				20EBC0AD2B5339ED001728DB /* Assets.xcassets in Resources */,
+				20EBC0C52B533B72001728DB /* nssl0045.jpg in Resources */,
 				20EBC0AB2B5339EB001728DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,8 +346,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +355,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eacardenase.hws-project-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +378,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +387,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eacardenase.hws-project-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
