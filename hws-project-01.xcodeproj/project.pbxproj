@@ -44,6 +44,7 @@
 		20EBC0BF2B533B72001728DB /* nssl0043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0043.jpg; sourceTree = "<group>"; };
 		20EBC0C02B533B72001728DB /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		20EBC0C12B533B72001728DB /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
+		20EBC0CC2B533DAC001728DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		20EBC0972B5339EB001728DB = {
 			isa = PBXGroup;
 			children = (
+				20EBC0CC2B533DAC001728DB /* README.md */,
 				20EBC0A22B5339EB001728DB /* hws-project-01 */,
 				20EBC0A12B5339EB001728DB /* Products */,
 			);
