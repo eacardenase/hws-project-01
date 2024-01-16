@@ -11,11 +11,16 @@ class DetailViewController: UIViewController {
     
     // MARK: - Properties
     
-    var selectedImageName: String?
+    var selectedImageName: String
+    lazy var imageView: UIImageView = {
+        let imageView =  UIImageView(image: UIImage(named: selectedImageName))
+        
+        return imageView
+    }()
     
     // MARK: - Lifecycle
     
-    init(selectedImageName: String? = nil) {
+    init(selectedImageName: String) {
         self.selectedImageName = selectedImageName
         
         super.init(nibName: nil, bundle: nil)
@@ -31,15 +36,28 @@ class DetailViewController: UIViewController {
         configureUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnTap = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.hidesBarsOnTap = false
+    }
+    
 }
 
 // MARK: - Helpers
 
 extension DetailViewController {
     func configureUI() {
-        guard let selectedImageName = selectedImageName else { return }
-        let imageView = UIImageView(image: UIImage(named: selectedImageName))
         title = selectedImageName
+        
+        // apply changes only to the current view controller
+        navigationItem.largeTitleDisplayMode = .never
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         

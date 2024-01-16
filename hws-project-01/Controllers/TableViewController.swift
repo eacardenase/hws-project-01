@@ -18,9 +18,23 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureUI()
+        setupData()
+    }
+}
+
+// MARK: - Helpers
+
+extension TableViewController {
+    func configureUI() {
+        title = "Storm Viewer"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         // Register the UITableViewCell class and assign a reuse identifier
         tableView.register(PictureCell.self, forCellReuseIdentifier: PictureCell.reuseIdentifier)
-        
+    }
+    
+    func setupData() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -30,6 +44,8 @@ class TableViewController: UITableViewController {
                 weatherPictures.append(item)
             }
         }
+        
+        weatherPictures.sort()
     }
 }
 
@@ -44,6 +60,8 @@ extension TableViewController {
         let model = Picture(name: weatherPictures[indexPath.row])
         
         cell.textLabel?.text = model.name
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
