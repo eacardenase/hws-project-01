@@ -62,6 +62,7 @@ extension DetailViewController {
         
         // apply changes only to the current view controller
         navigationItem.largeTitleDisplayMode = .never
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -73,5 +74,25 @@ extension DetailViewController {
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+    }
+}
+
+// MARK: - Actions
+
+extension DetailViewController {
+    @objc func shareTapped() {
+        guard let image = imageView.image?.jpegData(compressionQuality: 0.7)
+        else {
+            print("DEBUG: No image found")
+            
+            return
+        }
+        
+        // charged to share something from the app
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        // explicitly required on iPads
+        activityViewController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        
+        present(activityViewController, animated: true)
     }
 }
