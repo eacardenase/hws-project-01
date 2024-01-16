@@ -11,12 +11,12 @@ class DetailViewController: UIViewController {
     
     // MARK: - Properties
     
-    var titleLabel: String?
+    var selectedImageName: String?
     
     // MARK: - Lifecycle
     
-    init(titleLabel: String? = nil) {
-        self.titleLabel = titleLabel
+    init(selectedImageName: String? = nil) {
+        self.selectedImageName = selectedImageName
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,9 +37,9 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController {
     func configureUI() {
-        guard let titleLabel = titleLabel else { return }
-        let imageView = UIImageView(image: UIImage(named: titleLabel))
-        title = titleLabel
+        guard let selectedImageName = selectedImageName else { return }
+        let imageView = UIImageView(image: UIImage(named: selectedImageName))
+        title = selectedImageName
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         

@@ -12,7 +12,6 @@ class TableViewController: UITableViewController {
     // MARK: - Properties
     
     var weatherPictures = [String]()
-    static let reuseIdentifier = "Picture"
     
     // MARK: - Lifecycle
     
@@ -20,7 +19,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         // Register the UITableViewCell class and assign a reuse identifier
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: Self.reuseIdentifier)
+        tableView.register(PictureCell.self, forCellReuseIdentifier: PictureCell.reuseIdentifier)
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
@@ -40,16 +39,18 @@ extension TableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Self.reuseIdentifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PictureCell.reuseIdentifier, for: indexPath) as? PictureCell
+            else { fatalError("Could not cast tableViewCell into PictureCell") }
+        let model = Picture(name: weatherPictures[indexPath.row])
         
-        cell.textLabel?.text = weatherPictures[indexPath.row]
+        cell.textLabel?.text = model.name
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let imageName = weatherPictures[indexPath.row]
-        let vc = DetailViewController(titleLabel: imageName)
+        let vc = DetailViewController(selectedImageName: imageName)
         
         navigationController?.pushViewController(vc, animated: true)
     }
