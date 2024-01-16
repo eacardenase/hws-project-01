@@ -68,7 +68,8 @@ extension TableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let imageName = weatherPictures[indexPath.row]
-        let vc = DetailViewController(selectedImageName: imageName)
+        
+        let vc = DetailViewController(selectedImageName: imageName, selectedImageIndex: indexPath.row, imageArrayLength: weatherPictures.count)
         
         navigationController?.pushViewController(vc, animated: true)
     }

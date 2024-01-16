@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
     // MARK: - Properties
     
     var selectedImageName: String
+    var selectedImageIndex: Int
+    var imagesArrayLength: Int
     lazy var imageView: UIImageView = {
         let imageView =  UIImageView(image: UIImage(named: selectedImageName))
         
@@ -20,8 +22,10 @@ class DetailViewController: UIViewController {
     
     // MARK: - Lifecycle
     
-    init(selectedImageName: String) {
+    init(selectedImageName: String, selectedImageIndex: Int, imageArrayLength: Int) {
         self.selectedImageName = selectedImageName
+        self.selectedImageIndex = selectedImageIndex
+        self.imagesArrayLength = imageArrayLength
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -54,7 +58,7 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController {
     func configureUI() {
-        title = selectedImageName
+        title = "Picture \(selectedImageIndex + 1) of \(imagesArrayLength)"
         
         // apply changes only to the current view controller
         navigationItem.largeTitleDisplayMode = .never
