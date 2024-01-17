@@ -62,6 +62,7 @@ extension DetailViewController {
         
         // apply changes only to the current view controller
         navigationItem.largeTitleDisplayMode = .never
+        // #selector allows Swift to check that a method exists while building our code
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -89,8 +90,9 @@ extension DetailViewController {
         }
         
         // charged to share something from the app
-        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: [])
-        // explicitly required on iPads
+        let activityViewController = UIActivityViewController(activityItems: [image, selectedImageName], applicationActivities: [])
+        // explicitly required for iPads
+        // On iPad, iOS wants to connect activity view controllers to whatever triggered them, so that users have some extra context.
         activityViewController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         
         present(activityViewController, animated: true)
